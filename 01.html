@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪元素</title>
+		<style type="text/css">
+			/**CSS 伪元素用于向某些选择器设置特殊效果*/
+			p:first-letter{
+				color:red;
+			}
+			p.J-p:first-line{
+				color:green;
+			}
+			p.J-p:before{
+				content:url(1.png);
+			}
+			p.J-p:after{
+				content:url(2.png) ;
+			}
+		</style>
+	</head>
+	<body>
+		<p>DogeJian</p>
+		<p class='J-p'>dogejian</p>
+	</body>
+</html>
