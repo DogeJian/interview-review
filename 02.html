@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类</title>
+		<style type="text/css">
+			/**CSS 伪类用于向某些选择器添加特殊的效果*/
+			img{
+				width: 33.333%;
+				height:300px;
+			}
+			q:lang(no){quotes: "~" "~";} /***/
+			a:link{color: blueviolet;}   /**未选中状态*/
+			a:visited{color: red;}       /**选中状态*/
+			a:hover{color: lightblue;}   /**鼠标移动到标签上的状态*/
+			a:active{color: green;}      /**选定的链接*/
+			/**
+			   a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+
+               a:active 必须被置于 a:hover 之后，才是有效的。
+
+                              伪类名称对大小写不敏感。*/
+            span > i:first-child{color: red;} /**匹配所有span元素中第一个i元素*/
+            input:focus{background:yellow;}
+		</style>
+	</head>
+	<body>
+		<img src="3.png" alt="" /><img src="4.png" alt="" /><img src="5.png" alt="" />
+		<p> 123 <q lang="no"> 456 </q> 789 </p><br>
+		<a href="#">a元素伪类测试</a>
+		<span>Doge <i>J</i><i>ian</i></span>
+		<input type="text"value="" />
+	</body>
+</html>
